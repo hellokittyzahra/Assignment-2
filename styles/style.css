@@ -32,12 +32,10 @@ button {
     cursor: pointer;
     border: none;
     font-family: inherit;
-    font-size: 1rem;
-}
+    font-size: 1rem;}
 
 .hidden {
-    display: none;
-}
+    display: none;}
 
 /*Header section */
 .headerContainer {
@@ -47,9 +45,9 @@ button {
     align-items: center;
 }
 
-.navItems {
+.navitems {
     display: flex;
-    gap: 2rem;
+    gap: 2rem; color:#ffffffe0;
 }
 
 
