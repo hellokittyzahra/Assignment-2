@@ -1,0 +1,490 @@
+/* Shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #1A0B2E;
+    color: white;
+    overflow-x: hidden;
+}
+
+section {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Header section */
+.headerContainer {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navItems {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.btnColor,
+.heroButtons .spotify {
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    padding: 0.75rem 1rem;
+    border-radius: 1000px;
+    color: white;
+    font-weight: 600;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Hero section*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 101px 0;
+    background-image: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero .mic {
+    background-image: url(../assets/hero-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero .mic .newBadge {
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 8px 16px;
+    border-radius: 20px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.heroInfoPack {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroTitle h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.heroInfos p {
+    font-weight: 300;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.heroInfos .desktop-br {
+    display: none;
+}
+
+.heroButtons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.heroButtons button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 1000px;
+}
+
+.heroButtons .subscribe {
+    background-color: transparent;
+    border: 2px solid #00FF88;
+    color: #00FF88;
+    font-weight: 600;
+}
+
+/*About Section*/
+.about {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.aboutHolder {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutHolder h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.threeLineInfo {
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.oneLineInfo {
+    font-weight: 300;
+    opacity: 0.8;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+}
+
+.about hr {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.2;
+    border: 1px solid white;
+}
+
+.ratingInfo {
+    max-width: 1200px;
+    width: 100%;
+    margin: 5rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.ratings {
+    text-align: center;
+}
+
+.ratings h4 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #00FF88;
+}
+
+.ratings p {
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+/*Why Choose Section*/
+.whyChoose {
+    background-color: #230E3D;
+    padding: 120px 200px;
+}
+
+.whyChooseFeatures h3 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.featureCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards {
+    background-color: #2a0f4d;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.cardTall {
+    grid-row: span 2;
+}
+
+.cardWide {
+    grid-column: span 2;
+}
+
+.innerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.innerCard h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.cards p {
+    opacity: 0.6;
+    line-height: 1.5;
+}
+/* Featured Section */
+.fetaured{
+    background: #1A0B2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 0;
+}
+.fetaured .featuredEp h4{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.episodes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 120px;
+}
+.episodeCard{
+    width: 380px;
+    background: #250D44;
+    border-radius: 20px;
+
+}
+.episodeCard iframe{
+    width: 100%;
+    height: 214px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.cardInfos{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+}
+.cardInfos h5{
+    font-size: 24px;
+    font-weight: bold;
+}
+.time{
+    color: #00FF88;
+    font-weight: 600;
+}
+.host{
+    max-width: 1200px;
+    width: 100%;
+}
+.host h4{
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.hostContainer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.hostInfoCard{
+    max-width: 1200px;
+    width: 100%;
+    background: rgba(53, 17, 101, .40);
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 24px;
+    padding: 40px;
+    border-radius: 30px;
+}
+.hostInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+}
+.hostInfo h5{
+    font-size: 32px;
+    font-weight: bold;
+}
+.hostInfo p{
+    opacity: 60%;
+    line-height: 24px;
+}
+.socials{
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    line-height: 24px;
+}
+
+.socials div{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #533C72;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials div:hover{
+    cursor: pointer;
+}
+/* Responsive */
+@media screen and (max-width: 576px) {
+    .headerContainer {
+        justify-content: space-between;
+        margin: 1.25rem 0;
+        padding: 0 2rem;
+    }
+
+    .headerButton,
+    .navItems {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .brand img {
+        width: 60%;
+    }
+
+    /* Hero Responsive */
+    .hero {
+        padding: 40px 20px;
+        background-size: contain;
+    }
+
+    .hero .mic {
+        width: 12.5rem;
+        height: 12.5rem;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .hero .mic img {
+        width: 30%;
+    }
+
+    .hero .mic .newBadge {
+        top: 15px;
+        font-size: small;
+    }
+
+    .heroTitle h1 {
+        font-size: 2.5rem;
+    }
+
+    .heroInfos .desktop-br {
+        display: block;
+    }
+
+    /* About Responsive */
+    .about {
+        padding: 40px 20px;
+    }
+
+    .threeLineInfo br {
+        display: none;
+    }
+
+    .ratingInfo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .oneLineInfo {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+
+    /* Why Choose Responsive */
+    .whyChoose {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .whyChooseFeatures h3 {
+        font-size: 32px;
+    }
+
+    .featureCards {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Featured section Responsive */
+    .fetaured{
+        padding: 40px 60px 20px;
+    }
+    .fetaured .featuredEp h4{
+        font-size: 28px;
+
+    }
+    .fetaured .featuredEp .episodes{
+        flex-direction: column;
+    }
+    .episodeCard{
+        width: 380px;
+    }
+    .hostContainer h4{
+        font-size: 32px;
+    }
+    .hostInfoCard{
+        width: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 24px;
+    }
+    .socials{
+        justify-content: center;
+    }
+}
