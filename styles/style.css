@@ -1,3 +1,4 @@
+
 /* Shared styles */
 * {
     margin: 0;
@@ -60,11 +61,26 @@ button {
     color: white;
     font-weight: 600;
 }
-
+.btnColor{
+    animation: softBounce 1.8s ease-in-out infinite;
+}
 .hamburger {
     display: none;
 }
+button{
+    cursor: pointer;
+}
+@keyframes softBounce {
 
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
 /* Hero section*/
 .hero {
     display: flex;
@@ -100,6 +116,7 @@ button {
     position: absolute;
     top: 5%;
     right: 5%;
+    
 }
 
 .heroInfoPack {
@@ -373,8 +390,41 @@ button {
 .socials div:hover{
     cursor: pointer;
 }
+.footerHolder{
+    margin-top: 120px;
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 120px 0;
+}
+.icons, .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons{
+    gap: 40px;
+}
+.icon{
+    gap: 8px;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.icon p, .copyRight{
+    opacity: 60%;
+}
 /* Responsive */
 @media screen and (max-width: 576px) {
+    /* Header responsive */
     .headerContainer {
         justify-content: space-between;
         margin: 1.25rem 0;
@@ -393,16 +443,17 @@ button {
     .brand img {
         width: 60%;
     }
-
+    .heroButtons .subscribe{
+        animation: softBounce 1.8s ease-in-out infinite;
+    }
     /* Hero Responsive */
     .hero {
         padding: 40px 20px;
-        background-size: contain;
     }
 
     .hero .mic {
-        width: 12.5rem;
-        height: 12.5rem;
+        width: 200px;
+        height: 200px;
         background-size: contain;
         background-position: center;
     }
@@ -412,10 +463,10 @@ button {
     }
 
     .hero .mic .newBadge {
-        top: 15px;
+        top: 10px;
+        right: -20px;
         font-size: small;
     }
-
     .heroTitle h1 {
         font-size: 2.5rem;
     }
@@ -486,5 +537,21 @@ button {
     }
     .socials{
         justify-content: center;
+    }
+    /* Footer responsive */
+    .footerContainer{
+        padding: 40px 0;
+        gap: 24px;
+    }
+    .icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .footerBrand{
+        display: none;
+    }
+    .smallBrand{
+        display: block;
     }
 }
